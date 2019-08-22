@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="56dp"
+        android:src="@drawable/gojek"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <ImageView
+        android:id="@+id/imgButton_gomart"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/menu_gomart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo" />
+
+    <ImageView
+        android:id="@+id/imgButton_goride"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="50dp"
+        android:src="@drawable/menu_goride"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo" />
+
+    <ImageView
+        android:id="@+id/imgButton_gofood"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/menu_gofood"
+        app:layout_constraintEnd_toStartOf="@+id/imgButton_goride"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo" />
+
+    <ImageView
+        android:id="@+id/imgButton_gosend"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="30dp"
+        android:src="@drawable/menu_gosend"
+        app:layout_constraintEnd_toStartOf="@+id/imgButton_gomart"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_logo" />
+
+</android.support.constraint.ConstraintLayout>
